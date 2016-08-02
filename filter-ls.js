@@ -23,7 +23,7 @@ function ls() {
     }
     // for using path.extname to match process.argv[3] e.g. path.extname('index.coffee.md')
     for (var i=0; i<files.length; i++) {
-      if (path.extname(files[i]) == process.argv[3]) {
+      if (path.extname(files[i]) === process.argv[3]) {
         console.log(files[i]);
       }
     }
