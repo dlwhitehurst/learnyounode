@@ -32,3 +32,16 @@ function ls() {
 }
 
 ls();
+
+// Coffee script written by Jaz Singh (Shorter and more Succinct)
+// Jaz also did not use path require(ment)
+/*
+fs = require 'fs'
+
+extension = "." + process.argv[3]
+
+fs.readdir process.argv[2], (error, files) ->
+	for file in files
+		if file.endsWith extension
+			console.log file
+*/
